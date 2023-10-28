@@ -32,12 +32,9 @@ def write_file(data, filename):
 print("Loading from config.yaml...")
 config = Config(load_config())
 
-endpoint_data = []
 for endpoint in config.endpoints:
     print(f"Fetching data for endpoint {endpoint}")
     data = extract(config, endpoint)
     write_file(data, endpoint)
-    endpoint_data.append(data)
     
-print("Done, here's the data: \n")
-print(endpoint_data)
+print("Data extract complete, check your data/ folder to view all the data. \n")
