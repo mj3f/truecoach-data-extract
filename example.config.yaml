@@ -1,0 +1,7 @@
+# Rename this file to config.yaml and fill in the values
+api:
+  base: ""
+  endpoints:
+    - ""
+    - ""
+  bearer: ""
